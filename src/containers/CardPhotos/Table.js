@@ -1,24 +1,19 @@
-import React ,{useState}from "react";
+import React ,{useState,useContext}from "react";
+import StyleContext from "../../contexts/StyleContext";
 import Select, { components } from 'react-select';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import AliceCarousel from 'react-alice-carousel';
-
 import {Fade} from "react-reveal";
-import { Tabs, Tab } from "react-bootstrap";
 import "./Table.scss";
 // reactstrap components
-import {
-  Container,
-} from "reactstrap";
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Row from 'react-bootstrap/Row';
 import {ImTablet} from 'react-icons/im'
 import {IoPhonePortraitOutline} from 'react-icons/io5'
 import {AiOutlineLaptop} from 'react-icons/ai'
 import {BsSmartwatch} from 'react-icons/bs'
-import Slide1 from "./path/Slide1/Slide1"
+import SlidePrice from "./path/SlidePrice"
+import {Data} from "./path/Data"
 //../../Data  
+
 const CustomOption = (props) => (
   <components.Option {...props}>
     <img 
@@ -28,47 +23,13 @@ const CustomOption = (props) => (
     {props.label}
   </components.Option>
 );
-const CustomOption2 = (props) => (
-  <components.Option {...props}>
-    <img 
-    className="custom-icon"
-    src={require("./path/icon/Albaniasss.png")} 
-    alt={props.label} />
-    {props.label}
-  </components.Option>
-);
-
-  
-
-  const type = [
-    { label: "Bags", value: "bags", img: "./path/icon/Albaniasss.png" },
-    { label: "Print", value: "print", img: "./path/icon/Albaniasss.png" },
-    // Add more type as needed
-  ];
-
-  const subtype = [
-    { label: "Subtype 1", value: "subtype1", img: "/Albaniasss.png", type: ["bags"] },
-    { label: "Subtype 2", value: "subtype2", img: "./path/img/Albaniasss.png", type: ["Print"] },
-    // Add more subtype as needed
-  ];
-
-  const productsBySubtype = [
-      { id: 1, name: "Product 1", price: 20, options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
-      { id: 2, name: "Product 2", price: 30,options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
-      { id: 3, name: "Product 3", price: 25, options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
-     { id: 4, name: "Product 4", price: 35, options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
-   ]
 
 export default function Services() {
+  const {Langsar} = useContext(StyleContext);//Langsar.intro_content
   const [selectedType, setSelectedType] = useState(null);
   const [selectedSubtype, setSelectedSubtype] = useState(null);
 
-
-  
-
-  
-  
-  const filteredProducts = productsBySubtype.filter((product) => {
+  const filteredProducts = Langsar.Data.filter((product) => {
     // Show all products if neither type nor subtype is selected
     if (!selectedType && !selectedSubtype) {
       return true;
@@ -85,7 +46,6 @@ export default function Services() {
   });
 
 
-
   const handleTypeChange = (selectedOption) => {
     setSelectedType(selectedOption);
     // Reset selected subtype when the type changes
@@ -96,16 +56,14 @@ export default function Services() {
     setSelectedSubtype(selectedOption);
   };
 
-
   return (
-    
     <Fade bottom duration={1000} distance="40px">
           <div className="container-fluid greet-main1" id="table">
-          
-         <Slide1/>
+          <h3 className="card-title my-3">All products</h3>
+         <SlidePrice items={Langsar.Data} />
           <h3 className="card-title">All products</h3>
           <Select
-  options={type.map((element) => ({
+  options={Langsar.type.map((element) => ({
     ...element,
     icon: `./path/icon/${element.label}.png`, // Provide the path to the corresponding icon
   }))}
@@ -113,12 +71,12 @@ export default function Services() {
   components={{ Option: CustomOption }} // Use the custom option component
   onChange={handleTypeChange}
   value={selectedType}
-  defaultValue={type.length > 0 ? { label: type[0].label, value: type[0].value } : null}
+  defaultValue={Langsar.type.length > 0 ? { label: Langsar.type[0].label, value: Langsar.type[0].value } : null}
   // ...
 />
           <h3 className="card-title">Select a Type</h3>
           <Select
-  options={subtype.map((element) => ({
+  options={Langsar.subtype.map((element) => ({
     ...element,
     icon: `./path/icon/${element.label}.png`, // Provide the path to the corresponding icon
   }))}
@@ -157,7 +115,7 @@ export default function Services() {
                     </td>
                     <td>
                       <div className="m-auto my-auto h-100 justify-content-center align-items-center d-flex">
-                        <a className="justify-content-center align-items-center" href="invoice.html">{product.name}</a>
+                        <a className="justify-content-center align-items-center" href="invoice.html">{product.price}</a>
                       </div>
                     </td>
                     <td>
@@ -169,7 +127,6 @@ export default function Services() {
                             <Select options={product.options.map((option) => ({ label: option, value: option }))}
                             defaultValue={{ label: product.options[0], value: product.options[0] }}
                             />
-                       
                           </div>
                           <div className="col-md-4"></div>
                         </div>
