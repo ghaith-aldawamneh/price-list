@@ -1,0 +1,35 @@
+@import "../../_globalColor";
+
+img {
+  width: 100%;  
+  height: auto;  
+}
+.flex_j {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3
+}
+
+.custom-e {
+  position: relative;
+  border: 2px solid #0d6efd; /* Border with 'border-info' color (#0d6efd) */
+  border-radius: 50%; /* Rounded-circle */
+  background: linear-gradient(45deg, #16b3c2, #0e1c5f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.4rem;
+  /* Additional styles if needed */
+}
+.flex_backg{
+background: linear-gradient(45deg, #f8f9fa, #d6d8db);
+opacity: 0.5;
+display: block;
+} /* Gradient background with 'bg-gradient' and 'bg-secondary' colors */
+//
+//.custom-e:hover {
+   /* Change the gradient colors on hover */
+//  background: linear-gradient(45deg, #094786, #321264); /* Gradient background with 'bg-gradient' and 'bg-secondary' colors */
+ // opacity: 0.9; /* Change the opacity on hover */
+//}

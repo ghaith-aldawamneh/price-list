@@ -1,0 +1,68 @@
+
+
+:root {
+  --custom-icon-width: 80px; // Define a CSS variable for the width
+}
+
+@media (max-width: 767px) {
+  :root {
+    --custom-icon-width: 50px; // Adjusted width for smaller screens
+  }
+}
+
+img {
+  width: 100%;  
+  height: auto;  
+}
+.greet-main1 {
+  width: 90% !important;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+m-auto my-auto h-100 justify-content-center align-items-center  d-flex
+.centcont {
+  display: flex; /* d-flex */
+  margin: auto; /* m-auto */
+  height: 100%; /* h-100 */
+  justify-content: center; /* justify-content-center */
+  align-items: center; /* align-items-center */
+  
+  
+}
+
+
+
+.custom-icon {
+  // Your styles for the custom icon go here
+  // For example, you can add styles like width, margin, etc.
+  margin-left: auto;
+  margin-right: auto;
+  width:40px;
+  margin-right: 1rem;
+}
+
+.custom-icon-list {
+  // Your styles for the custom icon go here
+  // For example, you can add styles like width, margin, etc.
+
+  width:var(--custom-icon-width);
+  margin-right: 1rem;
+}
+
+
+
+
+th2{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tgg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
