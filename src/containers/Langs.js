@@ -163,9 +163,13 @@ header_num:"(+01) 123 456 7890",
   welcome:"empty_unused",
 
 
-  intro_heading:"Willkommen im Handy Fix Center ",
-  intro_content:"Ein leidenschaftliches Handy-Fix-Center 🚀 mit Erfahrung in der Reparatur mobiler Anwendungen mit den neuesten Technologien, Repair instead of throwing away: your local technology expert, Ihre elektronischen Geräte verdienen eine zweite Chance! Bei uns können Sie Ihre defekten Geräte ohne Datenverlust reparieren lassen. Ob Handy, Laptop oder Tablet – wir stehen Ihnen zur Seite.",
+  intro_heading:" مرحبًا بك في مركز حلول ريكسلا ",
+  intro_content:"وجهتك للحصول على حلول متعددة الاستخدامات! 🚀 في ريكسلا، قمنا بتوسيع خبرتنا لنقدم مجموعة متنوعة من الخدمات، كلها بتسعير شفاف وتنافسي لتلبية احتياجاتك الفريدة. 🔧 الابتكار والإبداع: من صنع منتجات مطبوعة مخصصة مثل الأكياس البلاستيكية والأعلام إلى استكشاف حلاول الرعاية الصحية الرائدة، ريكسلا هي خبيرتك المحلية في تحويل الأفكار إلى حقيقة. اختر الاستدامة واللمسة الشخصية مع خدماتنا المبتكرة، كلها بتسعير شفاف. 💡 إعادة تعريف الصحة والعافية: قم برفع مستوى رفاهيتك مع خدمات الرعاية الصحية المتخصصة في ريكسلا. اختبر التحولات من خلال خدمات مثل زراعة الشعر واستكشاف الدقة مع توفير تسعير شفاف. انطلق في رحلة نحو حياة أكثر صحة. 📚 تمكين التعليم: تنقل بسهولة في تعقيدات قبول الجامعات مع مساعدة ريكسلا. نمد خدماتنا لمساعدة الطلاب في تأمين القبولات، مما يضمن انتقالًا سلسًا إلى التعليم العالي، مع تسعير يجعل دعم التعليم ميسرًا. 🌐 سحر الويب: ادخل عالم الرقميات مع خدمات تصميم الويب في ريكسلا. من المفهوم إلى الإنشاء، نصنع مواقع الويب التي تتناغم مع رؤيتك، وتترك انطباعًا دائمًا، وتسعيرنا الشفاف يضمن لك الحصول على أقصى قيمة مقابل استثمارك. في ريكسلا، نحن لا نقدم مجرد حلاول؛ نقوم بصياغة فرص لعالم أكثر حيوية وتواصلًا. اعتنق الإمكانيات معنا! ✨",
+
+  inventor:"من أفضل 33 مخترعاً في الشرق الأوسط",
   contactme:"KONTAKTIERE MICH",
+
+
 
 brands_title:"Welche Marken unterstützen wir?",
 brands_subtitle:"Wir unterstützen die meisten Mobiltelefonmarken:",
@@ -190,10 +194,10 @@ serv5_exp:"Unsere Techniker führen Softwareaktualisierungen durch und beheben F
 serv6:"Datenwiederherstellung:",
 serv6_exp:"Im Falle eines Datenverlusts stehen wir Ihnen zur Seite. Wir bemühen uns, Ihre wertvollen Daten wiederherzustellen.",
 
-contactInfo_title:"Contact Me ☎️ german",
-contactInfo_subtitle:"german DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
-contactInfo_number:"+92-0000000000",
-contactInfo_email_address:"saadpasta70@gmail.com",
+contactInfo_title:" تواصل معي ☎️",
+contactInfo_subtitle:"هل تناقش مشروعًا أم ترغب فقط في إلقاء التحية؟ صندوق الوارد الخاص بي مفتوح للجميع",
+contactInfo_number:"+905370638946",
+contactInfo_email_address:"ghaith.aldawamneh@gmail.com",
 
 sen:"ddd",
 sen1:    emoji(
@@ -220,10 +224,10 @@ sen3:    emoji(
     { id: 2, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
     { id: 3, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
    { id: 4, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
-   { id: 1, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
-   { id: 2, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
-   { id: 3, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
-  { id: 4, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
+   { id: 5, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
+   { id: 6, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
+   { id: 7, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
+  { id: 8, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
  
   
   ],
@@ -242,15 +246,14 @@ export const english={
     // Add more subtype as needed
   ],
 Data : [
-  { id: 1, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
+  { id: 1, name: "سشيصضsdfds", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
   { id: 2, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
   { id: 3, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
  { id: 4, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
- { id: 1, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
- { id: 2, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
- { id: 3, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
-{ id: 4, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
-
+ { id: 5, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
+ { id: 6, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
+ { id: 7, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
+{ id: 8, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] }
 
 ],
 
@@ -335,6 +338,7 @@ header_num:"(+01) 123 456 7890",
   discount3:"Small repairs:",
   discount3_h1:"Charging port repair (general):From €79.00",
   discount3_h2:"Speaker Replacement (General):From €79.00",
+  
   discount3_h3:"Camera Repair (General):From €79.00",
   
   discount4:"Services:",
@@ -357,9 +361,11 @@ header_num:"(+01) 123 456 7890",
   welcome:"empty_unused",
 
 
-  intro_heading:"Welcome to the Handy Fix Center ",
-  intro_content:"A passionate cell phone fix center 🚀 with experience in repairing mobile applications using the latest technologies, Repair instead of throwing away: your local technology expert, your electronic devices deserve a second chance! With us you can have your defective devices repaired without data loss. Whether cell phone, laptop or tablet – we are at your side.",
-  contactme:"CONTACT ME german",
+  intro_heading:"Welcome to Rexla Solutions Hub ",
+  intro_content:"Your go-to destination for versatile solutions with transparent pricing! 🚀 At Rexla, we've expanded our expertise to offer a diverse range of services, all with clear and competitive pricing to meet your unique needs. 🔧 Innovate and Create: From crafting custom printed products like plastic bags and flags to exploring cutting-edge healthcare solutions, Rexla is your local expert in bringing ideas to life. Choose sustainability and personalized touch with our innovative services, all with transparent pricing. 💡 Health and Wellness Redefined: Elevate your well-being with specialized health services at Rexla. Experience transformations through services like hair transplantation and explore precision with zirconium crowns for dental needs, all with clear and competitive pricing. Embark on a journey to a healthier you without breaking the bank. 📚 Empowering Education: Navigate the complexities of university admissions effortlessly with Rexla's assistance. We extend our services to help students secure acceptances, ensuring a smooth transition into higher education, with pricing that makes education support accessible. 🌐 Web Wizardry: Step into the digital realm with Rexla's web design services. From concept to creation, we craft websites that resonate with your vision, leaving a lasting impression, and our transparent pricing ensures you get the most value for your investment. At Rexla, we're not just providing solutions; we're crafting opportunities for a more vibrant and connected world with clear and competitive pricing. Embrace the possibilities with us! ✨",
+  inventor:"ONE OF THE BEST 33 INVENTORS IN THE MIDDLE EAST",
+ 
+  contactme:"CONTACT ME ☎️",
   brands_title:"Which brands do we support?",
   brands_subtitle:"We support most mobile phone brands:",
   serv_title:"We offer various services",
@@ -383,10 +389,10 @@ header_num:"(+01) 123 456 7890",
   serv6:"Data recovery:",
   serv6_exp:"In the event of data loss, we are here to help you. We strive to restore your valuable data.",
  
-  contactInfo_title:"engContact Me",
-  contactInfo_subtitle:"DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.germany",
-  contactInfo_number:"+92-0000000000",
-  contactInfo_email_address:"saadpasta70@gmail.com",
+  contactInfo_title:"Contact Me",    
+  contactInfo_subtitle:"DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL",
+  contactInfo_number:"+905370638946",
+  contactInfo_email_address:"ghaith.aldawamneh@gmail.com",
 
 
  

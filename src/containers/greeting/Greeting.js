@@ -20,7 +20,7 @@ export default function Greeting() {
     <Fade bottom duration={1000} distance="40px">
       <section className="greet-main mt-5 " id="greeting">
         <div className="greeting-main mt-md-1 mt-5">
-          <div className="greeting-text-div">
+          <div className="greeting-text-div mt-5">
             <div>
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
@@ -35,7 +35,19 @@ export default function Greeting() {
                     ? "dark-mode greeting-text-p"
                     : "greeting-text-p subTitle"
                 }
-              >
+              >          <div className="greeting-image-div">
+              {illustration.animated ? (
+                              <img
+                              alt="man sitting on table"
+                              src={require("../../assets/images/cover.jpg")}
+                            ></img>
+              ) : (
+                <img
+                  alt="man sitting on table"
+                  src={require("../../assets/images/developerActivity.svg")}
+                ></img>
+              )}
+            </div>
                 {Langsar.intro_content}
               </p>
               <SocialMedia />
@@ -45,19 +57,7 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-                            <img
-                            alt="man sitting on table"
-                            src={require("../../assets/images/cover.png")}
-                          ></img>
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
-          </div>
+
         </div>
       </section>
     </Fade>

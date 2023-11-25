@@ -7,6 +7,7 @@ import Prices from "./CardPhotos/Prices";
 import Map_main from "./CardPhotos/Map_main";
 import Map from "./CardPhotos/Map";
 import Contactme from "./CardPhotos/Contactme";
+import Inventor from "./CardPhotos/Inventor";
 import Table from "./CardPhotos/Table";
 import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
@@ -45,6 +46,7 @@ const Home = () => {
     {(page1 || page2) &&<Greeting />}
 
 
+    {!(page1 || page2) &&<Inventor />}
     {!(page1 || page2) &&<Profile />}
     <Footer />
     <ScrollToTopButton />

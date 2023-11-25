@@ -23,9 +23,9 @@ export default function Contact() {
           <Col sm="3" xs="6">
             <img
 alt="..."
-              className="img-fluid rounded-circle shadow"
+              className=" rounded-circle shadow"
               src={require("../../assets/images/smart watch.jpg")}
-              style={{width: "300px", height: "300px" }}
+              style={{width: "200px", height: "200px" }}
             />
                         <small className="d-block text-uppercase font-weight-bold mb-4">
          
