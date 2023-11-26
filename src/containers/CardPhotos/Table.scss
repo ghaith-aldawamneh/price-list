@@ -10,6 +10,12 @@
   }
 }
 
+.table-responsive {
+  max-height: 500px; // Adjust the maximum height as needed
+  overflow-y: auto;
+}
+
+
 img {
   width: 100%;  
   height: auto;  

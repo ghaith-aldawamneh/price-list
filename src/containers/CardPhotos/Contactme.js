@@ -41,7 +41,7 @@ const ContactForm = () => {
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data) => {
     // Destrcture data object
-    const {title, name,firstname, email,phoneNumber,contactProblem, subject, message } = data;
+    const {title, name,SecondName, email,phoneNumber,contactProblem, subject, message } = data;
     try {
       // Disable form while processing submission
       setDisabled(true);
@@ -50,7 +50,7 @@ const ContactForm = () => {
       const templateParams = {
         title,
         name,
-        firstname,
+        SecondName,
         email,
         phoneNumber,
         contactProblem,
@@ -129,14 +129,14 @@ const ContactForm = () => {
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                  
    <div className=' row d-flex justify-content-between align-items-center  '> 
-                    <h6 className='col-2 ' >{Langsar.firstName}:</h6>
+                    <h6 className='col-2 ' >{Langsar.SecondName}:</h6>
                     <input
                       type='text'
-                      name='name'
-                      {...register('name', {
+                      name='SecondName'
+                      {...register('SecondName', {
                         required: {
                           value: true,
-                          message: 'Please enter your name'
+                          message: 'Please enter your SecondName'
                         },
                         maxLength: {
                           value: 30,
@@ -144,7 +144,7 @@ const ContactForm = () => {
                         }
                       })}
                       className='col-10 form-control-lg formInput'
-                      placeholder={Langsar.firstName}
+                      placeholder={Langsar.SecondName}
                     ></input></div>
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                  
@@ -152,7 +152,7 @@ const ContactForm = () => {
 
                   <div className='col'>
                    <div className='row d-flex justify-content-between align-items-center '> 
-                    <h6 className='col-2' >Email:</h6>
+                    <h6 className='col-2' >{Langsar.contactEmail}:</h6>
                     <input
                       type='email'
                       name='email'

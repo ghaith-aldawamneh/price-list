@@ -59,9 +59,9 @@ export default function Services() {
   return (
     <Fade bottom duration={1000} distance="40px">
           <div className="container-fluid greet-main1" id="table">
-          <h3 className="card-title my-3">All products</h3>
-         <SlidePrice items={Langsar.Data} />
-          <h3 className="card-title">All products</h3>
+          <h3 className="card-title my-3">Products Slide</h3>
+         <SlidePrice items={filteredProducts} pathVariable={"./img"} />
+          <h3 className="card-title">Some of the Products</h3>
           <Select
   options={Langsar.type.map((element) => ({
     ...element,
@@ -137,7 +137,18 @@ export default function Services() {
               </tbody>
                     </table>
                   </div>
+
+                  
                   </div>
+                  <h3 className="card-title my-4">Web Services</h3>
+                  <SlidePrice items={filteredProducts} pathVariable={"./img"} />
+                  <h3 className="card-title my-4">Health services</h3>
+                  <SlidePrice items={filteredProducts} pathVariable={"./img"} />
+                  <h3 className="card-title my-4">Universities Acceptance</h3>
+                  <SlidePrice items={filteredProducts} pathVariable={"./img"} />
+
+
+
                 </div>
   </Fade>
   );

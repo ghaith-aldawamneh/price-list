@@ -11,6 +11,8 @@ import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
+
+  //in this line we add a new line 
   const {Langsar} = useContext(StyleContext);//Langsar.intro_content
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
@@ -63,3 +65,4 @@ export default function Greeting() {
     </Fade>
   );
 }
+
