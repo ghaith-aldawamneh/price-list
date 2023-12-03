@@ -20,8 +20,8 @@ export default function Greeting() {
   }
   return (
     <Fade bottom duration={1000} distance="40px">
-      <section className="greet-main mt-md-1 mt-5 " id="greeting">
-        <div className="greeting-main mt-md-1 mt-5">
+      <section className="greet-main mt-md-5 mt-5 " id="greeting">
+        <div className="greeting-main mt-md-5 mt-5">
           <div className="greeting-text-div mt-5">
             <div>
               <h1
