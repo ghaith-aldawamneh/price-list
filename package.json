@@ -10,11 +10,14 @@
     "emailjs-com": "^3.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "fs": "0.0.1-security",
     "gh-pages": "^2.1.1",
     "google-maps-react": "^2.0.6",
+    "google-translate-api": "^2.3.0",
     "i18next": "^23.6.0",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
+    "path": "^0.12.7",
     "react": "^16.10.2",
     "react-alice-carousel": "^2.8.0",
     "react-bootstrap": "^2.8.0",
@@ -33,6 +36,7 @@
     "react-twitter-embed": "3.0.3",
     "reactstrap": "^9.2.0",
     "sass": "^1.68.0",
+    "translate": "^2.0.2",
     "use-places-autocomplete": "^4.0.1"
   },
   "scripts": {

@@ -32,7 +32,7 @@ export default function Greeting() {
 
         <div className="greeting-main mt-md-1 mt-5">
 
-          <div className="greeting-image-div">
+          <div className="">
             {illustration.animated ? (
                             <img
                             alt="man sitting on table"

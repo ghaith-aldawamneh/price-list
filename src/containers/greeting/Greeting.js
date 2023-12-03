@@ -20,7 +20,7 @@ export default function Greeting() {
   }
   return (
     <Fade bottom duration={1000} distance="40px">
-      <section className="greet-main mt-5 " id="greeting">
+      <section className="greet-main mt-md-1 mt-5 " id="greeting">
         <div className="greeting-main mt-md-1 mt-5">
           <div className="greeting-text-div mt-5">
             <div>
@@ -37,7 +37,7 @@ export default function Greeting() {
                     ? "dark-mode greeting-text-p"
                     : "greeting-text-p subTitle"
                 }
-              >          <div className="greeting-image-div">
+              >          <div className="">
               {illustration.animated ? (
                               <img
                               alt="man sitting on table"

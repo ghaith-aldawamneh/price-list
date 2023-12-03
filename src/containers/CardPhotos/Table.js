@@ -12,6 +12,8 @@ import {AiOutlineLaptop} from 'react-icons/ai'
 import {BsSmartwatch} from 'react-icons/bs'
 import SlidePrice from "./path/SlidePrice"
 import {Data} from "./path/Data"
+import translate from 'translate'
+
 //../../Data  
 
 const CustomOption = (props) => (
@@ -28,6 +30,27 @@ export default function Services() {
   const {Langsar} = useContext(StyleContext);//Langsar.intro_content
   const [selectedType, setSelectedType] = useState(null);
   const [selectedSubtype, setSelectedSubtype] = useState(null);
+  const [selectedOption, setSelectedOption] = useState({value:""});
+  const [selectedOptions, setSelectedOptions] = useState({});
+ 
+  const translateWord = async (word, targetLanguage) => {
+    try {
+        console.log(`Translating word: "${word}" to language: "${targetLanguage}"`);
+        const translationResult = await translate(word, { from: 'en', to: targetLanguage });
+        console.log(`Original Word: ${word}`);
+        console.log(`Translated Word (${targetLanguage}): ${translationResult}`);
+    } catch (error) {
+        console.error(`Error translating word: ${error.message}`);
+        console.error(`Error details:`, error);
+    }
+};
+
+// Example usage
+const wordToTranslate = 'hello';
+const targetLanguage = 'es'; // Replace with the target language code (e.g., 'es' for Spanish)
+
+translateWord(wordToTranslate, targetLanguage);
+
 
   const filteredProducts = Langsar.Data.filter((product) => {
     // Show all products if neither type nor subtype is selected
@@ -50,11 +73,24 @@ export default function Services() {
     setSelectedType(selectedOption);
     // Reset selected subtype when the type changes
     setSelectedSubtype(null);
+    setSelectedOption({value:""});
+    setSelectedOptions({})
   };
 
   const handleSubtypeChange = (selectedOption) => {
     setSelectedSubtype(selectedOption);
+    setSelectedOption({value:""});
+     setSelectedOptions({})
   };
+
+  const handleOptionChange = (product, selectedOption) => {
+    //setSelectedOption(selectedOption.value);
+  setSelectedOptions((prev) => ({
+    ...prev,
+    [product.id]: selectedOption.value,
+    
+  }));
+};
 
   return (
     <Fade bottom duration={1000} distance="40px">
@@ -111,11 +147,16 @@ export default function Services() {
                   <tr key={product.id}>
                     <td>
                       <img className="custom-icon-list" src={require(`./path/img/${product.img}`)} alt={product.name} />
-                      <span className="text-muted">{product.name}</span>
+                      <span className="text-muted">{selectedOptions[product.id] ? selectedOptions[product.id].name : product.name}</span>
                     </td>
                     <td>
                       <div className="m-auto my-auto h-100 justify-content-center align-items-center d-flex">
-                        <a className="justify-content-center align-items-center" href="invoice.html">{product.price}</a>
+                        <a className="justify-content-center align-items-center" href="invoice.html"
+                        onClick={() => console.log('Selected Option:', selectedOption)}
+                        >
+                  
+                          {selectedOptions[product.id] ? selectedOptions[product.id].price : product.price}
+                          </a>
                       </div>
                     </td>
                     <td>
@@ -124,8 +165,20 @@ export default function Services() {
                           <div className="dropdown">
                             {/* Add the appropriate dropdown or selection component here */}
                             {/* For example: */}
-                            <Select options={product.options.map((option) => ({ label: option, value: option }))}
-                            defaultValue={{ label: product.options[0], value: product.options[0] }}
+                            <Select options={product.options.map((option) => ({ 
+                              label:(
+                                <div>
+                                  {option.img && <img className="custom-icon-list" src={require(`./path/images/${option.img}`)} alt={option.name} />}
+                                  {option.name}
+                                </div>
+                              ),
+                               value: option
+                          
+                          }))}
+
+                            defaultValue={{ value: product.options[0] }}
+                            onChange={(selectedOption) => {handleOptionChange(product, selectedOption);setSelectedOption(selectedOption.value);}}
+                            value={selectedOption.value}
                             />
                           </div>
                           <div className="col-md-4"></div>

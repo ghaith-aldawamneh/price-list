@@ -220,18 +220,26 @@ sen3:    emoji(
     // Add more subtype as needed
   ],
   Data : [
-    { id: 1, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
+    { id: 1, name: "Product 1", price: "20$", options: [ { id: "1-optionA", name: "Option A", price: "25$", img: "1-1-car-455.png", }, { id: "1-optionB", name: "1-faaf-43", price: "30$", img: "1-1-car-455.png", }, ], img: "1-1-car-455.png", type: ["bags"], subtype: ["subtype1"] },
+    { id: 2, name: "Product 2", price: "60$",options: [ { id: "1-optionA", name: "Option A", price: "25$", img: "1-1-car-455.png", }, { id: "1-optionB", name: "1-faaf-43", price: "30$", img: "1-1-car-455.png", }, ], img: "1-1-car-455.png", type: ["print"], subtype: ["subtype1"] },
+    { id: 3, name: "Product 3", price: "40$", options: [ { id: "1-optionA", name: "Option A", price: "25$", img: "1-1-car-455.png", }, { id: "1-optionB", name: "1-faaf-43", price: "30$", img: "1-1-car-455.png", }, ], img: "1-1-car-455.png", type: ["bags"], subtype: ["subtype2"] },
+ 
+  ],
+
+  Data2 : [
+    { id: 1, name: "سشيصضsdfds", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
     { id: 2, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
     { id: 3, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
    { id: 4, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
    { id: 5, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
    { id: 6, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
    { id: 7, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
-  { id: 8, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
- 
+  { id: 8, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] }
   
   ],
+
 }
+
 
 
 export const english={
@@ -245,19 +253,12 @@ export const english={
     { label: "Subtype 2", value: "subtype2", img: "./path/img/Albaniasss.png", type: ["Print"] },
     // Add more subtype as needed
   ],
-Data : [
-  { id: 1, name: "سشيصضsdfds", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
-  { id: 2, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
-  { id: 3, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
- { id: 4, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] },
- { id: 5, name: "Product 1", price: "20$", options: ["Option A", "Option B"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype1"] },
- { id: 6, name: "Product 2", price: "60$",options: ["Option C", "Option D"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype1"] },
- { id: 7, name: "Product 3", price: "40$", options: ["Option E", "Option F"], img: "Albaniasss.png", type: ["bags"], subtype: ["subtype2"] },
-{ id: 8, name: "Product 4", price: "35$", options: ["Option G", "Option H"], img: "Albaniasss.png", type: ["print"], subtype: ["subtype2"] }
-
-],
-
-
+  Data : [
+    { id: 1, name: "Product 1", price: "20$", options: [ { id: "1-optionA", name: "Option A", price: "25$", img: "1-1-car-455.png", }, { id: "1-optionB", name: "1-faaf-43", price: "30$", img: "1-1-car-455.png", }, ], img: "1-1-car-455.png", type: ["bags"], subtype: ["subtype1"] },
+    { id: 2, name: "Product 2", price: "60$",options: [ { id: "1-optionA", name: "Option A", price: "25$", img: "1-1-car-455.png", }, { id: "1-optionB", name: "1-faaf-43", price: "30$", img: "1-1-car-455.png", }, ], img: "1-1-car-455.png", type: ["print"], subtype: ["subtype1"] },
+    { id: 3, name: "Product 3", price: "40$", options: [ { id: "1-optionA", name: "Option A", price: "25$", img: "1-1-car-455.png", }, { id: "1-optionB", name: "1-faaf-43", price: "30$", img: "1-1-car-455.png", }, ], img: "1-1-car-455.png", type: ["bags"], subtype: ["subtype2"] },
+ 
+  ],
 
 
 
