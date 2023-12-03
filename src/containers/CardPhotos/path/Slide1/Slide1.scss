@@ -31,7 +31,27 @@ m-auto my-auto h-100 justify-content-center align-items-center  d-flex
   
 }
 
+.card-title1 {
+  // Your regular styles here
 
+  @media (min-width: 576px) {
+    .custom-text {
+      font-size:  8px !important; // Font size for small screens and larger
+    }
+  }
+
+  @media (min-width: 768px) {
+    .custom-text {
+      font-size: 40px !important; // Font size for medium screens and larger
+    }
+  }
+
+  @media (min-width: 992px) {
+    .custom-text {
+      font-size: 182px !important; // Font size for large screens and larger
+    }
+  }
+}
 
 .custom-icon {
   // Your styles for the custom icon go here

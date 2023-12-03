@@ -36,10 +36,10 @@ export default function SlidePrice({items,pathVariable}) {
   const {isDark} = useContext(StyleContext);
  console.log("pathVariable",pathVariable)
   const renderedItems = items.map((item, index) => (
-    <div key={index} className="my-auto h-100 justify-content-center align-items-center d-flex flex-column">
-      <img className="custom-icon m-auto" src={require(`${pathVariable}/${item.img}`)} onDragStart={handleDragStart} role="presentation" />
-      <h5 className="mt-2 card-title">{item.name}</h5>
-      <h6 className="mt-2 card-title">{item.price}</h6>
+    <div key={index} className="my-auto h-100 justify-content-center align-items-center d-flex flex-column card-title1">
+      <img className="custom-icon m-auto card-title1" src={require(`${pathVariable}/${item.img}`)} onDragStart={handleDragStart} role="presentation" />
+      <h5 className="mt-2 ">{item.name}</h5>
+      <h6 className="mt-2  custom-text">{item.price}</h6>
     </div>
   ));
 
