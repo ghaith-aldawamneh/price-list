@@ -92,7 +92,7 @@ translateWord(wordToTranslate, targetLanguage);
   }));
 };
 
-  return (
+return (
     <Fade bottom duration={1000} distance="40px">
           <div className="container-fluid greet-main1" id="table">
           <h3 className="card-title my-3">Products Slide</h3>
